@@ -1,0 +1,13 @@
+{
+    "name": "Custom Cursor",
+    "package": "custom_cursor",
+    "homepage": "https://github.com/yourusername/Custom-Cursor-Anki-2.0",
+    "version": "1.0.0",
+    "ankiweb_id": "none",
+    "min_anki_version": "2.1.0",
+    "max_anki_version": "2.1.99",
+    "author": "Your Name",
+    "description": "Allows users to set custom cursors in Anki",
+    "license": "GPL-3.0",
+    "conflicts": []
+}
