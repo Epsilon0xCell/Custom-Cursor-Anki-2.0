@@ -56,3 +56,4 @@ class CursorDialog(QDialog):
     def reset_cursor(self):
         from . import custom_cursor
         custom_cursor.reset_cursor()
+        self.file_path.setText("")
