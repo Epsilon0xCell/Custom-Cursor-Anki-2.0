@@ -50,10 +50,19 @@ class CursorDialog(QDialog):
         if not cursor_path or not os.path.exists(cursor_path):
             showInfo("Please select a valid cursor file")
             return
-        from . import custom_cursor
-        custom_cursor.set_cursor(cursor_path)
+        if not self._manager().set_cursor(cursor_path):
+            showInfo("That file could not be loaded as a cursor image")
 
     def reset_cursor(self):
-        from . import custom_cursor
-        custom_cursor.reset_cursor()
+        self._manager().reset_cursor()
         self.file_path.setText("")
+
+    @staticmethod
+    def _manager():
+        # Imported here, not at the top of this module: this module is
+        # itself imported by the package __init__ while the manager is
+        # still being created, so a top-level import of custom_cursor
+        # would be circular and could bind a half-built package. By the
+        # time a button is pressed, the package has finished loading.
+        from . import custom_cursor
+        return custom_cursor

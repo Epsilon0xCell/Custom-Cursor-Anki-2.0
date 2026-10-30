@@ -4,6 +4,9 @@ from aqt import mw
 from aqt.qt import *
 from .cursor_dialog import CursorDialog
 
+# The config is read once, here, because Anki imports this package once
+# when the add-on loads. Editing config.json inside Anki therefore takes
+# effect on the next start, not immediately; nothing below re-reads it.
 config = mw.addonManager.getConfig(__name__) or {}
 
 class CustomCursorManager:
@@ -29,7 +32,23 @@ class CustomCursorManager:
         if not cursor_path or not os.path.exists(cursor_path):
             return False
 
-        cursor = QCursor(QPixmap(cursor_path))
+        pixmap = QPixmap(cursor_path)
+        # A file can exist and still not be a loadable image (the browse
+        # filter offers .cur and .ani, which QPixmap cannot decode on
+        # every platform). A null pixmap would install an invisible
+        # cursor, so refuse it the same way as a missing file.
+        if pixmap.isNull():
+            return False
+
+        # Qt override cursors are a stack: each setOverrideCursor pushes
+        # and each restoreOverrideCursor pops exactly one. reset_cursor
+        # pops once, so applying a second cursor without popping the
+        # first would leave the older one active after a reset. Keep the
+        # stack depth at one by restoring the previous cursor first.
+        if self.current_cursor is not None:
+            mw.app.restoreOverrideCursor()
+
+        cursor = QCursor(pixmap)
         mw.app.setOverrideCursor(cursor)
         self.current_cursor = cursor
         return True
