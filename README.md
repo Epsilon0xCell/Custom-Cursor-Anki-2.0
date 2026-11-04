@@ -1,33 +1,26 @@
-![Introduction: a silent street before dawn, empties washed and waiting, one full bottle already delivered](intro-banner.png)
+<p align="center"><img src="banner.png" alt="Custom-Cursor-Anki-2.0 banner" width="800"></p>
+
+<p align="center"><img src="logo.png" alt="Custom-Cursor-Anki-2.0 logo" width="200"></p>
 
 # Custom-Cursor-Anki-2.0
 
-<!-- deco -->
-> Milkman Float at the Silent Hour. Help has arrived before the house asked.
-<!-- /deco -->
+**The Infrared Garden**
 
-![Custom-Cursor-Anki-2.0](banner.png)
-
-![Animated scene: the round crossing a terraced street](assets-scene.svg)
-
+In a surreal night garden shot like infrared film, flashcards are planted like seedlings and a giant mouse pointer stands over them like a sundial.
 
 An Anki add-on that lets you set a custom mouse cursor inside Anki.
 
-![Measuring tape separator](sep-heavy.svg)
+<p align="center"><img src="intro-banner.png" alt="Custom-Cursor-Anki-2.0 introduction" width="800"></p>
 
-<!-- deco -->
-> Day book page, ledger ruling, red margin at the left, a small milk bottle beside this first heading only: INSTALL.
-<!-- /deco -->
+![Animated scene: The Infrared Garden](assets-scene.svg)
+
+![Separator](sep-heavy.svg)
 
 ## Install
 
 Copy this folder into Anki's add-ons folder, then restart Anki. A `Custom Cursor` entry appears in the Tools menu (shortcut from `config.json`, default `Ctrl+Shift+C`). Open it, browse to an image file, press Apply Cursor, or press Reset Cursor to restore the normal cursor.
 
-![Measuring tape separator](sep-heavy.svg)
-
-<!-- deco -->
-> Day book page, ruled: HOW IT WORKS, in a clerk upright hand.
-<!-- /deco -->
+![Separator](sep-heavy.svg)
 
 ## How it works
 
@@ -36,11 +29,7 @@ Copy this folder into Anki's add-ons folder, then restart Anki. A `Custom Cursor
 - `config.json` holds `default_cursor`, `auto_apply`, and `shortcut`. The shortcut and the start-up behaviour above are now actually read from this file; before this pass they were ignored and the shortcut was always hardcoded.
 - `manifest.json` names the add-on, its version, and its supported Anki range. Its homepage and author previously shipped as template placeholders (`yourusername`, `Your Name`); both now point at this repo and account.
 
-![Measuring tape separator](sep-heavy.svg)
-
-<!-- deco -->
-> Day book page, ruled: VERIFIED BEHAVIOUR AND LIMITS, in a clerk upright hand.
-<!-- /deco -->
+![Separator](sep-heavy.svg)
 
 ## Verified behaviour and limits
 
@@ -48,6 +37,6 @@ Verified with a stub `aqt` harness (real Anki was not available here): the Tools
 
 Files: `__init__.py`, `cursor_dialog.py`, `config.json`, `manifest.json`, `logo.png`, `banner.png`.
 
-<!-- deco -->
-> **Note left under a bottle:** Please select a valid cursor file. That file could not be loaded as a cursor image. A file can exist and still not load.
-<!-- /deco -->
+![Separator](sep-heavy.svg)
+
+> **Note:** Please select a valid cursor file. That file could not be loaded as a cursor image. A file can exist and still not load.

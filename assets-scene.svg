@@ -1,54 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" role="img" aria-label="The milk round crossing a terraced street, animated scene">
-  <rect width="900" height="240" fill="#26344f"/>
-  <rect id="sky-cycle" width="900" height="90" fill="#26344f">
-    <animate attributeName="fill" values="#26344f;#4a5468;#26344f" dur="36s" repeatCount="indefinite"/>
-  </rect>
-  <g id="rooftops" fill="#141c2c">
-    <polygon points="0,90 0,58 90,58 90,90 150,90 150,50 250,50 250,90 330,90 330,60 430,60 430,90 520,90 520,52 620,52 620,90 710,90 710,58 810,58 810,90 900,90 900,240 0,240"/>
-  </g>
-  <g id="lamps-dimming" fill="#f6d682">
-    <circle cx="120" cy="76" r="6"><animate attributeName="opacity" values="1;0.25;1" dur="18s" repeatCount="indefinite"/></circle>
-    <circle cx="330" cy="76" r="6"><animate attributeName="opacity" values="1;0.25;1" dur="18s" begin="3s" repeatCount="indefinite"/></circle>
-    <circle cx="540" cy="76" r="6"><animate attributeName="opacity" values="1;0.25;1" dur="18s" begin="6s" repeatCount="indefinite"/></circle>
-    <circle cx="750" cy="76" r="6"><animate attributeName="opacity" values="1;0.25;1" dur="18s" begin="9s" repeatCount="indefinite"/></circle>
-  </g>
-  <g id="clock-hands">
-    <circle cx="852" cy="52" r="17" fill="#e8e6da"/>
-    <line x1="852" y1="52" x2="852" y2="40" stroke="#26344f" stroke-width="2.6"><animateTransform attributeName="transform" type="rotate" values="0 852 52;360 852 52" dur="60s" repeatCount="indefinite"/></line>
-    <line x1="852" y1="52" x2="862" y2="56" stroke="#26344f" stroke-width="2"><animateTransform attributeName="transform" type="rotate" values="0 852 52;360 852 52" dur="720s" repeatCount="indefinite"/></line>
-  </g>
-  <rect x="0" y="150" width="900" height="90" fill="#3c4350"/>
-  <g id="float-creeping">
-    <rect x="0" y="118" width="150" height="52" fill="#2c5c42"/>
-    <rect x="8" y="126" width="34" height="20" fill="#a8c4d2"/>
-    <circle cx="32" cy="176" r="13" fill="#141414"/><circle cx="118" cy="176" r="13" fill="#141414"/>
-    <g fill="#eef0e9">
-      <ellipse cx="66" cy="138" rx="5" ry="9"><animateTransform attributeName="transform" type="rotate" values="0 66 138;4 66 138;0 66 138" dur="2.2s" repeatCount="indefinite"/></ellipse>
-      <ellipse cx="82" cy="138" rx="5" ry="9"><animateTransform attributeName="transform" type="rotate" values="0 82 138;-4 82 138;0 82 138" dur="2.2s" begin="0.5s" repeatCount="indefinite"/></ellipse>
-      <ellipse cx="98" cy="138" rx="5" ry="9"><animateTransform attributeName="transform" type="rotate" values="0 98 138;4 98 138;0 98 138" dur="2.2s" begin="1s" repeatCount="indefinite"/></ellipse>
-      <ellipse cx="114" cy="138" rx="5" ry="9"><animateTransform attributeName="transform" type="rotate" values="0 114 138;-4 114 138;0 114 138" dur="2.2s" begin="1.5s" repeatCount="indefinite"/></ellipse>
-    </g>
-    <animateTransform attributeName="transform" type="translate" values="-170 0;920 0" dur="46s" repeatCount="indefinite"/>
-  </g>
-  <g id="milkman-crossing">
-    <g>
-      <rect x="-10" y="118" width="20" height="44" fill="#1c2026"/>
-      <circle cx="0" cy="108" r="8" fill="#36302a"/>
-      <rect x="-24" y="132" width="16" height="14" fill="none" stroke="#8a6d42" stroke-width="2.6"/>
-      <animateTransform attributeName="transform" type="translate" values="560 0;330 0;560 0" dur="20s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;1;0.45;1" keyTimes="0;0.45;0.55;1" dur="20s" repeatCount="indefinite"/>
-    </g>
-  </g>
-  <g id="doorstep-bottles" fill="#ccd4d2">
-    <rect x="600" y="168" width="13" height="26"/><rect x="622" y="168" width="13" height="26"/>
-    <rect x="644" y="168" width="13" height="26" fill="#f2f2ea"><animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.4;0.5;1" dur="20s" repeatCount="indefinite"/></rect>
-  </g>
-  <g id="near-wall">
-    <rect x="0" y="206" width="900" height="12" fill="#6e5c50"/>
-    <g id="cat-on-wall" fill="#232326">
-      <ellipse cx="0" cy="196" rx="17" ry="9"/>
-      <circle cx="16" cy="188" r="7"/>
-      <animateTransform attributeName="transform" type="translate" values="-40 0;420 0;420 0;940 0" keyTimes="0;0.35;0.6;1" dur="52s" repeatCount="indefinite"/>
-    </g>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 190" width="800" height="190" role="img" aria-label="The Infrared Garden: flashcards planted like seedlings under a giant mouse pointer sundial">
+<rect width="800" height="190" fill="#050508"/>
+<g fill="#ffeef5"><circle cx="90" cy="30" r="2"/><circle cx="230" cy="18" r="2"/><circle cx="520" cy="26" r="2"/><circle cx="700" cy="16" r="2"/><circle cx="640" cy="48" r="1.6"/><circle cx="360" cy="36" r="1.6"/></g>
+<ellipse cx="400" cy="172" rx="360" ry="16" fill="#1a0a14"/>
+<g>
+<ellipse cx="400" cy="158" rx="150" ry="14" fill="none" stroke="#22d3ee" stroke-width="2" opacity=".8"><animate attributeName="opacity" values=".8;.3;.8" dur="4s" repeatCount="indefinite"/></ellipse>
+<g transform="translate(368,18)"><path d="M0,0 L0,104 L26,84 L38,116 L52,110 L40,78 L66,78 Z" fill="#ffeef5" stroke="#22d3ee" stroke-width="3" stroke-linejoin="round"/><line x1="14" y1="104" x2="-50" y2="146" stroke="#22d3ee" stroke-width="3" opacity=".7"/></g>
+</g>
+<g font-family="Verdana,sans-serif" font-size="11">
+<g transform="translate(90,118)"><rect width="72" height="48" rx="4" fill="#ffeef5"/><text x="10" y="28" fill="#050508">card</text><path d="M36,48 C36,34 28,30 20,24 M36,48 C36,32 44,28 54,20" stroke="#ff8fb2" stroke-width="3" fill="none"/></g>
+<g transform="translate(230,128)"><rect width="72" height="48" rx="4" fill="#ff8fb2"/><text x="10" y="28" fill="#050508">card</text><path d="M36,48 C36,34 28,30 20,24 M36,48 C36,32 44,28 54,20" stroke="#ffeef5" stroke-width="3" fill="none"/></g>
+<g transform="translate(540,128)"><rect width="72" height="48" rx="4" fill="#ffeef5"/><text x="10" y="28" fill="#050508">card</text><path d="M36,48 C36,34 28,30 20,24 M36,48 C36,32 44,28 54,20" stroke="#ff8fb2" stroke-width="3" fill="none"/></g>
+<g transform="translate(660,112)"><rect width="72" height="48" rx="4" fill="#ff8fb2"/><text x="10" y="28" fill="#050508">card</text><path d="M36,48 C36,34 28,30 20,24 M36,48 C36,32 44,28 54,20" stroke="#ffeef5" stroke-width="3" fill="none"/></g>
+</g>
+<g fill="#ffeef5" opacity=".9"><ellipse cx="180" cy="92" rx="34" ry="12"/><ellipse cx="610" cy="84" rx="42" ry="14"/><ellipse cx="300" cy="70" rx="24" ry="9"/></g>
+<g><circle cx="120" cy="150" r="4" fill="#22d3ee"><animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/></circle></g>
 </svg>
